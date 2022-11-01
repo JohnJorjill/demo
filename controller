@@ -1,0 +1,7 @@
+@RestController
+public class AccountController {
+	@GetMapping("/account/{customerid}")
+	public Account getName(@PathVariable("customerid")String customerId){
+		return new Account("1234","1000.00");
+	}
+}
